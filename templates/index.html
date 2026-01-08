@@ -1,0 +1,476 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>BSoft Tecnologias</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/font-awesome.min.css')}}">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/linearicons.css')}}">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/flaticon.css')}}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/animate.css')}}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/owl.carousel.min.css')}}">
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/owl.theme.default.min.css')}}">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/bootstrap.min.css')}}">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/bootsnav.css')}}" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/responsive.css')}}">
+        <style>
+        
+        	.float--btn{
+        		width: 50px;
+        		height: 50px;
+        		border: 2px solid #ff4488;
+        		display: flex;
+        		align-items: center;
+        		justity-content: center;
+        		border-radius: 50%;
+        		position: fixed;
+        		right: 25px;
+        		bottom: 80px;
+        		transition: 0,5s ease-in-out;
+        		background-color: black;
+        		
+        	
+        	}
+        	
+        	.float--btn img{
+        		width: 95%;
+        	}
+        
+        </style>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+	
+	
+	
+	   
+		<!--welcome-hero start -->
+		
+		
+		<section id="home" class="welcome-hero">
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+								<img id="bs_logo" src="{{url_for('static',filename='assets/images/brand/bs_logo.png')}}">
+								
+								<a class="navbar-brand" href="index.html">BSoft<span></span></a>
+
+				            </div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li class=" scroll active"><a href="#home">Inicio</a></li>
+				                    <li class="scroll"><a href="#service">Servicos</a></li>
+				                    
+				                    <li class=""><a href="/projectos-bsoft">Novas Aplicacoes</a></li>
+				                    
+				                    <li class=""><a href="/contatos">Contactos</a></li>
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>BSoft Empresa de densevolvimento de softweres</h2>
+					<p>
+						Tens seu negocio , empresa e quer um aplicativo android ou site , blog ,<b>Chegou no Lugar Certo.</b>
+					</p>
+				    <a href="/contatos">	<button class="welcome-btn" onclick="">CONTATE NOS</button>
+</a>
+				</div>
+			</div>
+
+			
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+		<div class="boxrespf" style="color: white;padding: 10px 30px; width: 100%;">
+	    
+
+<div id="boxm" style=" display: flex; justify-content: center; align-items: center;">
+    <img  style="width: 70px; margin: 5px; border-radius: 30px; border:3px cadetblue solid;"  src="{{url_for('static',filename='assets/images/pfs/pf.jpg')}}">
+		        <h3>Simao Lucas Simao<br>programador,desiner, etc </h3>
+
+    
+		    </div>
+		    <div style="text-align: center; justify-content: center;">
+		        Fundador da BSoft Tecnologias ,Empresa de densevolvimento de software, jogos.
+		    </div>
+	    </div>
+		<!--service start -->
+		<section class="apps-section">
+  <div class="container">
+    <a href="/free-apps" class="apps-link">
+      <div class="card-go-apps">
+  📲 Nossos Aplicativos gratuitos para download
+</div>
+    </a>
+  </div>
+</section>
+
+		<section id="service" class="service">
+			<div class="container">
+				<div class="service-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+								    <img src="{{url_for('static',filename='assets/images/brand/android.png')}}">
+								</div>
+								<h2><a href="#">Densevolvimento de aplicativo <span>para</span> android</a></h2>
+								<p>
+								Densevolvemos Aplicativos para o sistema operational android e IOS, com leyout dinamicos e personalizados
+								    <a href=veja alguns exemplos
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<img src="{{url_for('static',filename='assets/images/brand/html.png')}}">
+								</div>
+								<h2><a href="#">Densevolvimento de Aplicacoes  Web : Sites e Blogs</a></h2>
+								<p>
+									Criamos Sites bonitos responsivos para si e seu negocio.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<img src="{{url_for('static',filename='assets/images/brand/desktop.png')}}">
+								</div>
+								<h2><a href="#">Densevolvimento de Sistemas Windows e Linox</a></h2>
+								<p>
+									Densevolvemos sistemas windows e linox ,tal como sistemas de gestao de pagamento , outros...
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+		    
+		<!--new-cars start -->
+		<section id="new-cars" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>Uns <span>dos</span> nossos projetos</p>
+					<h2>BSoft Apresenta</h2>
+				</div><!--/.section-header-->
+				<div class="new-cars-content">
+					<div class="owl-carousel owl-theme" id="new-cars-carousel">
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="{{url_for('static',filename='assets/images/novos_apps/ncm1.png')}}" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">BS Tradutor</a><span></span></a></h2>
+											<p>
+												O BS Tradutor e um aplicativo densevolvido pela BSoft para servir como seu tradutor do bolso.
+baixe o aplicativo ja em novembro na playstore , para appstore ainda esta em andamento.
+											</p>
+											<p class="new-cars-para2">
+												Este tradutor foi programado com um algoritmo capaz de reconhecer eros de escrita facilitando o uso do mesmo , bom tambem para aqueles que estao a comecar a aprender uma lingua nova.
+											</p>
+											
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="{{url_for('static',filename='assets/images/novos_apps/ncm2.png')}}" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">BS Notas</a></h2>
+											<p>
+												O BS Notas soluciona problemas de aqueles que necessitam de um caderno para anotar, podes anotar no BS notas e salvar as suas notas no aplicativo 
+sem necessitar de caderno e caneta.
+											</p>
+											<p class="new-cars-para2">
+												Com uma interface facil de usar  podes elininar notas , adicionar  mudar fonte e muito mais.
+											</p>
+											
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->	
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="{{url_for('static',filename='assets/images/novos_apps/ncm3.png')}}" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Video Downloader BS</a></h2>
+											<p>
+												O Aplicativo de baixar videos da BSoft , é um aplicativo rapido e muito facil de usar , Voce so precisa ter o link do video para baixar, Nao tem tempo definido de lancamebto na playstore. Aplicativo em densevolvimento.
+											</p>
+											<p class="new-cars-para2">
+												O Video Baixador da BS pode baixar videos do YOUTUBE,FACEBBOK,TikTok,INSTAGRAM e videos de outros sites.
+											</p>
+											
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+									
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+					</div><!--/#new-cars-carousel-->
+					
+									<a heref="/projectos-_bsoft" >
+											<button class="welcome-btn new-cars-btn" onclick="window.location.href='/projectos-_bsoft'">
+												VER DETALHES
+											</button></a>
+				</div><!--/.new-cars-content-->
+			</div><!--/.container-->
+
+		</section><!--/.new-cars-->
+		<!--new-cars end -->
+
+		<!--featured-cars start -->
+		
+						
+		
+				
+								
+						
+								
+
+		<!--/.featured-cars-->
+		<!--featured-cars end -->
+
+		<!-- clients-say strat -->
+		
+
+		<!--brand strat -->
+		<section id="brand"  class="brand">
+			<div class="container">
+				<div class="brand-area">
+					<div class="owl-carousel owl-theme brand-item">
+						
+						
+
+						<div class="item">
+							<a href="#">
+								<img src="{{url_for('static',filename='assets/images/brand/bs_logo.png')}}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+					</div><!--/.owl-carousel-->
+				</div><!--/.clients-area-->
+
+			</div><!--/.container-->
+
+		</section><!--/brand-->	
+		<!--brand end -->
+
+		<!--blog start -->
+		<section id="blog" class="blog"></section><!--/.blog-->
+		<!--blog end -->
+
+		<!--contact start-->
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">BSoft Tecnologias</a>
+								</div>
+								<p>
+									Empresa de densevolvimento de softweres
+								</p>
+								<div class="footer-contact">
+									<p>buchsoftware@gmail.com</p>
+									<p>+(258) 879349159</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>mais sobre nos</h2>
+								<ul>
+									<li><a href="#home">sobre nos</a></li>
+									<li><a href="/contatos">Liga para nos</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="single-footer-widget">
+								<h2>Top Projectos</h2>
+								<div class="row">
+									<div class="col-md-7 col-xs-6">
+									    <p>Aplicativos</p>
+										<ul>
+											<li><a href="#">BS Notas</a></li>
+											<li><a href="#">BS Tradutor</a></li>
+										 <li><a href="#">Video Baixador Bs</a></li>
+					
+										</ul>
+									</div>
+									<div class="col-md-5 col-xs-6">
+									    <p>Jogos</p>
+										<ul>
+																	<li><a href="#">Head Bomb</a></li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+									</div><!--/.foot-email-box-->
+									<!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>
+								&copy; essa plataforma foi densevolvinda pela BSoft <a href="/"></a>.
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-social">
+								<a href="https://www.facebook.com/profile.php?id=61554807853071"><i class="fa fa-facebook"></i></a>	
+								<a href="https://wa.link/2h8oqg"><i class="fa fa-whatsapp"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								
+							</div>
+						</div>
+					</div>
+				</div><!--/.footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div>
+			
+			<!--BSoft Chat bot button -->
+			<a class="float--btn" href="/bschatbot" ><img src="{{url_for('static',filename='assets/images/brand/chatbot.png')}}" /></a>
+			
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+		<script>
+		    function closePpedi(){
+		        
+		        document.getElementById("#boxFP").style.display = "none";
+		        
+		    };
+		</script>
+
+			<script src="../static/assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="../static/assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="../static/assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="../static/assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src="../static/assets/js/custom.js"></script>
+    </body>
+	
+</html>

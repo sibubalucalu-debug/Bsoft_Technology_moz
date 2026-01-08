@@ -1,0 +1,397 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>BSoft Tecnologias</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+         <link rel="stylesheet" href="{{url_for('static',filename='assets/css/font-awesome.min.css')}}">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/linearicons.css')}}">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/flaticon.css')}}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/animate.css')}}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/owl.carousel.min.css')}}">
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/owl.theme.default.min.css')}}">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/bootstrap.min.css')}}">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/bootsnav.css')}}" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/responsive.css')}}">
+        
+        
+         <style>
+        
+        	.float--btn{
+        		width: 50px;
+        		height: 50px;
+        		border: 2px solid #ff4488;
+        		display: flex;
+        		align-items: center;
+        		justity-content: center;
+        		border-radius: 50%;
+        		position: fixed;
+        		right: 25px;
+        		bottom: 80px;
+        		transition: 0,5s ease-in-out;
+        		background-color: black;
+        		
+        	
+        	}
+        	
+        	.float--btn img{
+        		width: 95%;
+        	}
+        
+        </style>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+	
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+								<img id="bs_logo" src="{{url_for('static',filename='assets/images/brand/bs_logo.png')}}"/>
+								
+								<a style="font-size: 20px;" class="navbar-brand" href="index.html">BSoft<span></span></a>
+
+				            </div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li class="active"><a href="/">Inicio</a></li>
+				                    <li class=""><a href="/#service">Servicos</a></li>
+				                    
+				                    <li class=""><a href="/projectos-bsoft">Novas Aplicacoes</a></li>
+				                    
+				                    <li class=""><a href="/contatos">Contactos</a></li>
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+				    <div  class="dvc" style="display: flex; justify-content: space-between; items-align: center; ">
+				        <a href="/"><h2>Home</h2></a>
+				        <a classs="btn--page" href="/lcontatos"><h2>Contatos</h2></a>
+				        </div>
+				        
+					<p>
+						Tens seu negocio , empresa e quer um aplicativo android ou site , blog ,<b>Chegou no Lugar Certo.</b>
+					</p>
+				    
+				</div>
+			</div>
+
+			
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+	    <div>
+
+
+	    </div>
+		<!--service start -->
+		<section id="service" class="service">
+			<div class="container">
+				<div class="service-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+								    <img src="{{url_for('static',filename='assets/images/brand/wplogo.png')}}">
+								</div>
+								<h2><a href="https://wa.link/2h8oqg">Contate nos pelo <span>pelo</span>Whatsapp</a></h2>
+								<p>
+							 Contacte nos pelo Whatsapp e assim pode conversar por mensagem oudio ou video chamada
+								    
+								</p>
+							
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<img src="{{url_for('static',filename='assets/images/brand/tllogo.png')}}">
+								</div>
+								<h2><a href="tell:+258879349159">Contacte nos por Ligacao Telefonica </a></h2>
+								<p>
+									Click aqui se quer ligar para nos , em uma chamada de voz
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<img src="{{url_for('static',filename='assets/images/brand/fblogo.png')}}">
+								</div>
+								<h2><a href="https://www.facebook.com/profile.php?id=61554807853071">Contate nos via nossa pagina do Facebook</a></h2>
+								<p>
+									Click aqui para visitar a nossa pagina do Facebook, e conhermos mais...
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+		    
+		<!--new-cars start -->
+		<section id="new-cars" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+					
+					<h2>Contacte a bsoft pelo Email</h2>
+				</div><!--/.section-header-->
+				<div class="new-cars-content">
+					<div class="owl-carousel owl-theme" id="new-cars-carousel">
+					    <div class="boxForm">
+					        <form class="formMail" method="post" action="/contatos" enctype="multipart/form-data">
+					            <p>Nome: </p>
+					            <input type="name" name="nome_" required="">
+					            <p>Numero:</p>
+					            <input type="tell" name="num_" required="">
+					            <p>Email</p>
+					            <input type="email" name="email_" required="">
+					            <p>Oque deseja?</p>
+					            <textarea type="text" name="dsejo_" ></textarea>
+					            <br>
+								<button type="submit">Enviar email</button>
+					            
+					        </form>
+					    </div>
+			
+										
+					</div><!--/#new-cars-carousel-->
+				</div><!--/.new-cars-content-->
+			</div><!--/.container-->
+
+		</section><!--/.new-cars-->
+		<!--new-cars end -->
+
+		<!--featured-cars start -->
+		
+						
+						
+				
+								
+						
+								
+
+		<!--/.featured-cars-->
+		<!--featured-cars end -->
+
+		<!-- clients-say strat -->
+		
+
+		<!--brand strat -->
+		<section id="brand"  class="brand">
+			<div class="container">
+				<div class="brand-area">
+					<div class="owl-carousel owl-theme brand-item">
+						
+						
+
+						<div class="item">
+							<a href="#">
+								<img src="{{url_for('static',filename='assets/images/brand/bs_logo.png')}}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+					</div><!--/.owl-carousel-->
+				</div><!--/.clients-area-->
+
+			</div><!--/.container-->
+
+				</section><!--/brand-->	
+		<!--brand end -->
+
+		<!--blog start -->
+		<section id="blog" class="blog"></section><!--/.blog-->
+		<!--blog end -->
+
+		<!--contact start-->
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">BSoft Tecnologias</a>
+								</div>
+								<p>
+									Empresa de densevolvimento de softweres
+								</p>
+								<div class="footer-contact">
+									<p>buchsoftware@gmail.com</p>
+									<p>+(258) 879349159</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>mais sobre nos</h2>
+								<ul>
+									<li><a href="#home">sobre nos</a></li>
+									<li><a href="/contatos">Liga para nos</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="single-footer-widget">
+								<h2>Top Projectos</h2>
+								<div class="row">
+									<div class="col-md-7 col-xs-6">
+									    <p>Aplicativos</p>
+										<ul>
+											<li><a href="#">BS Notas</a></li>
+											<li><a href="#">BS Tradutor</a></li>
+										 <li><a href="#">Video Baixador Bs</a></li>
+					
+										</ul>
+									</div>
+									<div class="col-md-5 col-xs-6">
+									    <p>Jogos</p>
+										<ul>
+																	<li><a href="#">Head Bomb</a></li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+									</div><!--/.foot-email-box-->
+									<!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>
+								&copy; essa plataforma foi densevolvinda pela BSoft <a href="/"></a>.
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-social">
+								<a href="https://www.facebook.com/profile.php?id=61554807853071"><i class="fa fa-facebook"></i></a>	
+								<a href="https://wa.link/2h8oqg"><i class="fa fa-whatsapp"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								
+							</div>
+						</div>
+					</div>
+				</div><!--/.footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			<!--BSoft Chat bot button -->
+			<a class="float--btn" href="/bschatbot" ><img src="{{url_for('static',filename='assets/images/brand/chatbot.png')}}" /></a>
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+		{% if alert %}
+		<script>
+			alert("{{alert}}");
+		
+		</script>
+		{% endif %}
+
+		<script src="../static/assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="../static/assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="../static/assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="../static/assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src="../static/assets/js/custom.js"></script>
+        
+        
+    </body>
+	
+</html>

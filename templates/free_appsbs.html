@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Apps | Buch Software Technology</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#0a1aff;
+      --secondary:#7b2cff;
+      --dark:#0b0f1a;
+      --card:#11162a;
+      --text:#cfd3ff;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--dark);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+
+    header{
+      position:fixed;
+      top:0;left:0;width:100%;z-index:1000;
+      background:rgba(11,15,26,.85);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(255,255,255,.05);
+    }
+
+    nav{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 20px;
+    }
+
+    nav h1{font-size:22px;color:#fff}
+
+    nav ul{list-style:none;display:flex;gap:20px}
+    nav ul a{font-size:14px;opacity:.8}
+    nav ul a:hover{opacity:1;color:#fff}
+
+    main{
+      padding-top:120px;
+      padding-bottom:80px;
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      text-align:center;
+      animation:fadeDown 1s ease;
+    }
+
+    main h2{
+      font-size:42px;
+      color:#fff;
+      margin-bottom:15px;
+    }
+
+    main p{
+      max-width:650px;
+      margin:auto;
+      font-size:16px;
+      opacity:.9;
+    }
+
+    section{padding:80px 20px}
+
+    .container{max-width:1200px;margin:auto}
+
+    .apps{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .app-card{
+      background:var(--card);
+      border-radius:22px;
+      overflow:hidden;
+      transition:.4s;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .app-card:hover{transform:translateY(-8px)}
+
+    .app-card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+        /* cobre todo espaço */
+  object-position: top;
+    }
+
+    .app-body{
+      padding:25px;
+      flex:1;
+    }
+
+    .app-body h3{
+      color:#fff;
+      margin-bottom:10px;
+    }
+
+    .app-body p{
+      font-size:14px;
+      opacity:.85;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:12px 22px;
+      border-radius:30px;
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      color:#fff;
+      font-size:14px;
+      font-weight:500;
+      transition:.3s;
+    }
+
+    .btn:hover{transform:translateY(-2px)}
+
+    footer{
+      text-align:center;
+      padding:30px;
+      font-size:13px;
+      opacity:.7;
+    }
+
+    @keyframes fadeDown{
+      from{opacity:0;transform:translateY(-30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @media(max-width:768px){
+      main h2{font-size:32px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Buch Software Technology</h1>
+   
+  </nav>
+</header>
+
+<main>
+  <h2>Aplicativos Gratuitos BSoft</h2>
+  <p>Aplicativos desenvolvidos pela Buch Software Technology para facilitar o dia a dia, produtividade e acesso inteligente à informação.</p>
+</main>
+
+<section>
+  <div class="container">
+    <div class="apps">
+
+      <div class="app-card">
+        <img src="{{url_for('static',filename='assets/images/novos_apps/Bs_notas_pf.png')}}"  alt="BS Notas">
+        <div class="app-body">
+          <h3>BS Notas</h3>
+          <p>Aplicativo simples e poderoso para criar, organizar e guardar notas com rapidez e segurança.</p>
+          <a href="https://drive.google.com/uc?export=download&id=1QWhF5gpX-Mgbm5J8HB-3wMFv_DSwzRWj" download class="btn"><i class="fa-solid fa-download" ></i>
+    📥 Baixar Aplicativo
+</a>
+
+        </div>
+      </div>
+
+      <div class="app-card">
+        <img src="{{url_for('static',filename='assets/images/novos_apps/Bs_tradutor_pf.png')}}"  alt="BS Tradutor Speak">
+        <div class="app-body">
+          <h3>BS Tradutor Speak</h3>
+          <p>Tradutor inteligente com leitura de voz, ideal para estudos, viagens e comunicação diária.</p>
+          <a href="https://drive.google.com/uc?export=download&id=1gzY34YyUamW5KctY5mO3KzVHyy7Ik2WI" download class="btn"><i class="fa-solid fa-download"></i> 📥  Baixar  Aplicativo</a>
+          
+          
+    
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Buch Software Technology · Free Apps
+</footer>
+
+</body>
+</html>
